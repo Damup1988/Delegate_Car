@@ -38,7 +38,7 @@ namespace Delegates
                 BMW.SpeedDown(10);
             }
 
-            Console.WriteLine("For Git");
+            Console.WriteLine("For Git v2");
             Console.ReadLine();
         }
     }
