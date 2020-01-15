@@ -25,8 +25,8 @@ namespace Delegates
 
 
             Car BMW = new Car(300, 150, "BMW Z4", false);
-            NewCar.RegHandler(new Car.CarStateHandler(ShowMessage));
-            BMW.RegHandler(new Car.CarStateHandler(ShowMessage));
+            NewCar.Notify += ShowMessage;
+            BMW.Notify += ShowMessage;
 
             for(int i = 0; i < 10; i++)
             {

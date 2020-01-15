@@ -3,3 +3,8 @@ C:\Users\SafarovDT\OneDrive\_Coding\_Projects\c_sharp\Temp_test\Root_project\MY_
 C:\Users\SafarovDT\OneDrive\_Coding\_Projects\c_sharp\Temp_test\Root_project\MY_TEMP_tests\Delegates\bin\Debug\Delegates.pdb
 C:\Users\SafarovDT\OneDrive\_Coding\_Projects\c_sharp\Temp_test\Root_project\MY_TEMP_tests\Delegates\obj\Debug\Delegates.exe
 C:\Users\SafarovDT\OneDrive\_Coding\_Projects\c_sharp\Temp_test\Root_project\MY_TEMP_tests\Delegates\obj\Debug\Delegates.pdb
+C:\Users\SafarovDT\OneDrive\_Coding\_Projects\c_sharp\Temp_test\Root_project\MY_TEMP_tests\Delegates\Delegate_Car.git\bin\Debug\Delegates.exe.config
+C:\Users\SafarovDT\OneDrive\_Coding\_Projects\c_sharp\Temp_test\Root_project\MY_TEMP_tests\Delegates\Delegate_Car.git\bin\Debug\Delegates.exe
+C:\Users\SafarovDT\OneDrive\_Coding\_Projects\c_sharp\Temp_test\Root_project\MY_TEMP_tests\Delegates\Delegate_Car.git\bin\Debug\Delegates.pdb
+C:\Users\SafarovDT\OneDrive\_Coding\_Projects\c_sharp\Temp_test\Root_project\MY_TEMP_tests\Delegates\Delegate_Car.git\obj\Debug\Delegates.exe
+C:\Users\SafarovDT\OneDrive\_Coding\_Projects\c_sharp\Temp_test\Root_project\MY_TEMP_tests\Delegates\Delegate_Car.git\obj\Debug\Delegates.pdb

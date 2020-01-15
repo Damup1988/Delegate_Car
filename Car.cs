@@ -10,20 +10,8 @@ namespace Delegates
     {
         //Our delegate
         public delegate void CarStateHandler(string Message);
-
-        //Exemplar of the delegate
-        CarStateHandler mes;
-
-        //Registration of the delegate mes
-        public void RegHandler(CarStateHandler mes)
-        {
-            this.mes += mes;
-        }
-
-        public void UnregHandler(CarStateHandler mes)
-        {
-            this.mes -= mes;
-        }
+        //Our event
+        public event CarStateHandler Notify;
 
         public int MaxSpeed { get; set; }
         public int CurSpeed { get; set; }
@@ -53,24 +41,20 @@ namespace Delegates
             if (!CarIsDead)
             {
                 CurSpeed += delta;
-                if (mes != null)
-                    mes($"Current spped is {CurSpeed}");
+                Notify?.Invoke($"Current spped is {CurSpeed}");
                 if (MaxSpeed - CurSpeed < 20 & MaxSpeed - CurSpeed > 0)
                 {
-                    if (mes != null)
-                        mes($"Current spped is {CurSpeed}. The car is going to blow!");
+                    Notify?.Invoke($"Current spped is {CurSpeed}. The car is going to blow!");
                 }
                 if (CurSpeed > MaxSpeed)
                 {
-                    if (mes != null)
-                        mes("The car has blown!");
+                    Notify?.Invoke("The car has blown!");
                     CarIsDead = true;
                 }
             }
             else
             {
-                if (mes != null)
-                    mes($"{Model} is dead!");
+                Notify?.Invoke($"{Model} is dead!");
             }
         }
 
@@ -79,18 +63,16 @@ namespace Delegates
             if (CarIsMoving)
             {
                 CurSpeed -= delta;
-                if (mes != null)
-                    mes($"Current spped of {Model} is {CurSpeed}");
+                Notify?.Invoke($"Current spped of {Model} is {CurSpeed}");
                 if (CurSpeed <= 0)
                 {
-                    if (mes != null)
-                        mes($"{Model} has stopped");
+                    Notify?.Invoke($"{Model} has stopped");
                     CarIsMoving = false;
                 }
             }
             else
             {
-                    mes?.Invoke($"{Model} isn't moving");
+                Notify?.Invoke($"{Model} isn't moving");
             }
 
         }
