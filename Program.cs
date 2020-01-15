@@ -8,11 +8,6 @@ namespace Delegates
 {
     class Program
     {
-        private static void ShowMessage(string mes)
-        {
-            Console.WriteLine(mes);
-        }
-
         static void Main(string[] args)
         {
             Car NewCar = new Car
@@ -25,8 +20,9 @@ namespace Delegates
 
 
             Car BMW = new Car(300, 150, "BMW Z4", false);
-            NewCar.Notify += ShowMessage;
-            BMW.Notify += ShowMessage;
+            //Lambda expressions
+            NewCar.Notify += mes => Console.WriteLine(mes);
+            BMW.Notify += mes => Console.WriteLine(mes);
 
             for(int i = 0; i < 10; i++)
             {
